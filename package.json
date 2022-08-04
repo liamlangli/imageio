@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node esbuild.js"
+    "dev": "node esbuild.js",
+    "build": "node esbuild.product.js"
   },
   "devDependencies": {
     "esbuild": "^0.14.53",

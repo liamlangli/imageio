@@ -116,12 +116,13 @@ self.onmessage = async (event: MessageEvent) => {
     const pendings: Promise<any>[] = [];
     const buffers: ArrayBuffer[] = [];
     for (const texture of config.textures) {
-        if (texture.format == "lut") {
-            pendings.push(fetch_array_buffer(parent + "/" + texture.images[0].file).then(buffer => {
-                buffers.push(buffer);
-                parse_lut(pack, texture, buffer);
-            }));
-        } else if (texture.format == "cubemap" && texture.encoding == "luv" && texture.type == "specular_ue4") {
+        // if (texture.format == "lut") {
+        //     pendings.push(fetch_array_buffer(parent + "/" + texture.images[0].file).then(buffer => {
+        //         buffers.push(buffer);
+        //         parse_lut(pack, texture, buffer);
+        //     }));
+        // }
+        if (texture.format == "cubemap" && texture.encoding == "luv" && texture.type == "specular_ue4") {
             pendings.push(fetch_array_buffer(parent + "/" + texture.images[0].file).then(buffer => {
                 buffers.push(buffer);
                 parse_radiance(pack, texture, buffer);
