@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "es2020",
+      "strict": true,
+      "moduleResolution": "Node",
+      "declaration": true,
+      "sourceMap": true,
+      "lib": [
+        "DOM",
+        "ESNext",
+        "webworker"
+      ],
+      "typeRoots": ["node_modules/@types"]
+    }
+  }
