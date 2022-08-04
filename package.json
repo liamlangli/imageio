@@ -1,5 +1,5 @@
 {
-  "name": "@union_native/envtools",
+  "name": "@union_native/imageio",
   "version": "0.0.1",
   "description": "union native image/texture tools",
   "main": "index.js",
