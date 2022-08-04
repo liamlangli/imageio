@@ -14,7 +14,7 @@ build({
     watch: {
         onRebuild(error, result) {
             if (error) console.error('watch build failed:', error)
-            else console.log('watch build succeeded:', result)      
+            else console.log('watch build succeeded:', result)
         }
     }
 }).catch(() => process.exit(1))
